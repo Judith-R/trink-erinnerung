@@ -1,7 +1,4 @@
-document.getElementById("start").addEventListener("click", () => {
-  startTimer(playBeep);
+document.getElementById("start").addEventListener("click", (e) => {
+  e.target.disabled = true; // verhindert doppelten Start
+  startTimer(playBeep, showCountdown);
 });
-
-git add .
-git commit -m "Grundgerüst mit Platzhaltern"
-git push origin main
